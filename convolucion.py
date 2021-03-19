@@ -4,6 +4,7 @@ Autores:
     * David Rodríguez Fragoso A01748760
     * Israel Sánchez Miranda A01378705
     * José Miguel García Gurtubay Moreno A01373750
+    * Miguel Angel Juárez Dorantes A01753328
     * Omar Rodrigo Sorchini Puente A01749389
     * Paola Dorantes Calderón A01653108
 18/03/2021
@@ -18,11 +19,11 @@ def convolucion(IOriginal, Kernel):
     Función que se encarga de realizar la convolución a una imágen con un Kernel
 
     Parámetros:
-    * IOriginal = Matriz de la imagen original a la que se le aplicará la convolución
-    * Kernel = Matriz que servirá como el Kernel de la convolución de la imagen
+    * IOriginal = Matriz de la imágen original a la que se le aplicará la convolución
+    * Kernel = Matriz que servirá como el Kernel de la convolución de la imágen
 
     Retornos:
-    * Res = Matriz resultante de realizar la convolución de la imagen
+    * Res = Matriz resultante de realizar la convolución de la imágen
     '''
 
     #Variables:
@@ -34,7 +35,7 @@ def convolucion(IOriginal, Kernel):
     for i in range(len(Res)):
         #For para recorrer las columnas
         for j in range(len(Res[0])):
-            suma = 0  #Resultado de la multiplicación de la imagen con el Kernel
+            suma = 0  #Resultado de la multiplicación de la imágen con el Kernel
             #For para recorrer las filas del Kernel
             for m in range(len(Kernel)):
                 #For para recorrer las columnas del Kernel
