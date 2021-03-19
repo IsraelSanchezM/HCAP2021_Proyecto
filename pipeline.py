@@ -15,6 +15,6 @@ def pipeline(img):
         IR = conv.convolucion(IR, K)
         IR = mp.maxpooling(IR)
 
-    cv2.imwrite('ICMPCS.jpg', IR)
+    cv2.imwrite('ICMPCS_David.jpg', IR)
 
-pipeline('002.jpg')
+pipeline('Grievous.jpg')
