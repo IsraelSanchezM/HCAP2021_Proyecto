@@ -10,9 +10,12 @@ def maxpooling(Img):
         j = 0
         for n in range(0, len(Img[0]), 2):
             r = np.amax(Img[m: m + 2, n:n + 2])
-            Res[i][j] = r
-            j += 1
-        i += 1        
+            if(i >= fr or j >= cr):
+                return Res
+            else:
+                Res[i][j] = r
+                j += 1
+        i += 1
     return Res
 '''
 I = [[1, 2, 3, 4], [5, 6, 7, 8], [4, 3, 2, 1], [1, 3, 7, 9]]

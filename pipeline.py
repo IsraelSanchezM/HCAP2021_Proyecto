@@ -9,7 +9,7 @@ def pipeline(img):
     Kernel = [[-1, -1, -1, -1, 0], [1, 1, 0, 0, 0], [1, 1, -1, -1, 0], [-1, 0, 0, 0, 1], [1, 1, 0, 0, -1]]
     K = np.array(Kernel)
 
-    IR = conv.convolucion(IMGS, K) 
+    IR = conv.convolucion(IMGS, K)
     IR = mp.maxpooling(IR)
     for i in range(2):
         IR = conv.convolucion(IR, K)
